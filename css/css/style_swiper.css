@@ -1,0 +1,117 @@
+/* /* * { margin: 0; padding: 0;} */
+
+
+/* .section03.bigbox1 {
+  width: 100%; height: 600px;
+} */
+
+/* .section03 .bigbox1 .party div.swiper-wrapper {
+  width: 100%; height: 100%;
+} 
+.section03 .bigbox1 .party div.swiper-wrapper div.swiper-slide {
+  width: 100%; height: 100%; 
+}  */
+
+/* div#wrap div.bigbox1 div.party {
+  width: 2400px; margin-top: 170px; display: flex; justify-content: space-between;
+} */
+
+
+div#wrap div.bigbox1 {width: 1920px; height: 100vh; margin:0 auto; background: url(../img/gold3\ copy.jpg) no-repeat; position: relative; overflow: hidden; }
+
+
+.section03 div.bigbox1 div.mySwiper div.swiper-wrapper  {
+  width: 100%; height: 100%; 
+  margin-top: 220px;
+}
+
+
+.section03 .bigbox1 .mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.section03 .bigbox1 .mySwiper .swiper-slide img {
+  display: block;
+  width: 350px;
+  height: 100%;
+  object-fit: cover; opacity: 0.9;
+}
+
+/* .section03 .bigbox1 .Swiper {
+  width: 100%;
+  height: 100%;
+  padding: 30px; column-gap: 30px;
+}
+
+.section03 .bigbox1 .Swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section03 .bigbox1 .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .section03 .bigbox1 .party {
+  width: 100%; height: 300px;
+} 
+.section03 .bigbox1 .party div.swiper-wrapper div.swiper-slide {
+  width: 100%; height: 100%; 
+} 
+
+div#wrap div.bigbox1 div.party div.swiper-wrapper div.swiper-slide {
+width:300px; height: 300px; } 
+
+div#wrap div.bigbox1 div.party div.swiper-wrapper div.swiper-slide img {
+width:300px; height: 300px; background: cover;
+} */
+
+
+
+
+/* swiper2 */
+section.swiper { width: 1920px; height: 100vh; margin: auto ; overflow: hidden; position: relative; box-sizing: border-box; background: url(../img/royal1\ copy.jpg)no-repeat;
+}
+
+section.swiper ul.auto { position: absolute; bottom: 60px; left: 60px; z-index: 20; }
+section.swiper ul.auto li { float: left; margin-right:20px; cursor: pointer; color: #fff; font-size: 20px; opacity: .9; transition: .5s;}
+section.swiper ul.auto li:hover { opacity: 1; transform: scale(1.4);}
+
+/* Swiper  */
+section.swiper div.swiper-wrapper { width: 100%; height: 100%; }
+section.swiper div.swiper-wrapper div.swiper-slide { width: 500px; height: 400px; position: relative; top: 50%; margin-top: -300px;}
+section.swiper div.swiper-wrapper div.swiper-slide div.inner { width: 100%; height: 100%; background-color: #fff; padding: 30px; box-sizing: border-box; opacity: .4; transition: 1s; }
+
+section.swiper  div.swiper-pagination-fraction { bottom: auto; top: 50px; left: auto; right: 50px; font-size: 16px; font-family: 'Orbitron'; letter-spacing: 1px; color: #eee;}
+section.swiper  div.swiper-pagination-fraction span:nth-child(2) { font-size: 30px; color: #fff;}
+
+section.swiper  div.swiper-wrapper div.swiper-slide-active div.inner { opacity: 1; box-shadow: 0 0 50px rgba(255, 255, 255, .8); }
+section.swiper  div.swiper-wrapper div.swiper-slide-active div.inner::before, section.swiper  div.swiper-wrapper div.swiper-slide-active div.inner::after { content: ""; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; background-color: #fff;}
+section.swiper  div.swiper-wrapper div.swiper-slide-prev div.inner, section.swiper  div.swiper-wrapper div.swiper-slide-next div.inner { opacity: .7;}
+
+@keyframes ani {
+  0% { opacity: 0; transform: scale(1);}
+  1% { opacity: .5; }
+  100% { opacity: 0; transform: scale(1.4);}
+}
+
+section.swiper  div.swiper-wrapper div.swiper-slide-active div.inner::before { animation: ani 1s ease 1;}
+section.swiper  div.swiper-wrapper div.swiper-slide-active div.inner::after { animation: ani 1s ease 0.3s 1;}
+
+section.swiper  div.swiper-wrapper div.swiper-slide div.inner div.con { position: relative; z-index: 10;}
+section.swiper  div.swiper-wrapper div.swiper-slide div.inner div.con img { width: 100%;}
+section.swiper  div.swiper-wrapper div.swiper-slide div.inner div.con h3 { font-weight: normal; font-size: 40px; font-family: 'Roboto'; color: #111; margin-top: 15px; margin-bottom: 20px;}
+section.swiper  div.swiper-wrapper div.swiper-slide div.inner div.con h3::after { content: ""; display: block; width: 30px; height: 1px; background-color: #888; margin-top: 15px; transition: 1s .5s; }
+section.swiper  div.swiper-wrapper div.swiper-slide-active div.inner div.con h3::after { width: 100px; }
+
