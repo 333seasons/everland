@@ -12,7 +12,7 @@ body { font-family: 'Noto Sans KR', dotum, '돋움', sans-serif;
 
 
 div#wrap { position: relative; width: 100%; height: 100%; overflow: hidden; }
-div#util { height: 47px; border-bottom: 1px solid #e1e1e1; background: #f8f8f8;}
+div#util { line-height: 47px; border-bottom: 1px solid #e1e1e1; background: #f8f8f8;}
 div.container {width: 1400px; height: 46px; margin: 0 auto;
   padding: 8px 0 6px; position: relative; }
 div.family { width: 800px; display: flex; position: absolute; top: 10px; left: 0; justify-content: space-between; line-height: 45px; }
@@ -23,7 +23,7 @@ div.right { width: 400px; display: flex; position: absolute; top: 10px; right: 0
   
 
 /* header */
-header {width:100%; position: fixed; top: 0; z-index: 9; }
+header {width:100%; position: fixed; top: 0; z-index: 100; }
 #header_wrap {width: 100%; border-bottom: 4px solid orange; background-color: #fff; } 
 #header_wrap div.header { 
   width: 1400px; 
@@ -48,12 +48,13 @@ header #header_wrap .header .header_2 h1 img {
 header #header_wrap div.header div.nav ul.gnb {
   position: absolute; bottom: 0; left: 300px; z-index: 1; display: flex;
 }  
-header #header_wrap div.header div.nav ul.gnb li.item div.item_name { padding: 10px 30px 34px 30px; font-size: 18px; }
-#header_wrap div.header div.nav ul.gnb li.item:hover div.item_name { background-color:orange; border-radius: 6px 6px 0 0; }
+header #header_wrap div.header div.nav ul.gnb li.item div.item_name { padding: 25px 30px ; font-size: 18px; }
+#header_wrap div.header div.nav ul.gnb li.item:hover div.item_name { background-color:orange; border-radius: 6px 6px 0 0; 
+color: #fff; font-weight: 400;}
 #header_wrap div.header div.nav ul.gnb li.item div.menu { width: 100%; position: fixed; left: 0px; display: none; 
 }
 #header_wrap div.header div.nav ul.gnb li.item:hover div.menu { display: block; }
-#header_wrap div.header div.nav ul.gnb li.item div.menu div.content { background-color:#f3f4de; border-top: 4px solid orange;}
+#header_wrap div.header div.nav ul.gnb li.item div.menu div.content { background-color:rgb(244, 245, 220) ; border-top: 4px solid orange;}
 #header_wrap div.header div.nav ul.gnb li.item div.menu div.content ul{ padding: 10px 0; } 
 #header_wrap div.header div.nav ul.gnb li.item div.menu div.content  ul > li { font-size: 18px; line-height: 2;}
 #header_wrap div.header div.nav ul.gnb > li  div.menu .content .today_time {
@@ -81,7 +82,6 @@ padding-left: 180px; line-height: 1.5;
 }
 #header_wrap div.header div.nav ul.gnb > li .menu .today_time {
   width: 18%;
-  border-right: 1px solid #f8fb98; 
 } 
 #header_wrap div.header div.nav ul.gnb > li > .menu .content .col {
   width: 82%; padding-left: 30px;
@@ -91,17 +91,11 @@ padding-left: 180px; line-height: 1.5;
   line-height: 1.5;
   border-left: 1px solid #999;
 }
-#header_wrap div.header div.nav ul.gnb > li > a {
-  display: block;
-}
-#header_wrap div.header div.nav ul.gnb > li:hover > a {
-  color:orange; 
-}
 #header_wrap div.header div.nav ul.gnb > li > .menu .content .col> ul > li > a {
   display: block; 
 }
 #header_wrap div.header div.nav ul.gnb > li > .menu .content .col> ul > li:hover > a {
-  color:orange;
+  color:orange; font-weight: 500;
 }
 
 /* right_menu */
@@ -231,10 +225,15 @@ div.section03 div.btn:hover {
 div#wrap section h2 { font-size: 40px; font-weight: 300; color: #fff; background-color: #333; text-align: center; 
   padding-top: 30px; 
 }
-section.swiper div.btn > a.moreBtn { display:block; width: 200px; height: 50px; text-align:center; line-height: 50px;
-  margin-top: -200px; position: absolute; left: 670px; 
-  background-color: orange; border-radius: 25px; opacity: .7}
-section.swiper div.btn > a.restBtn { display:block; width: 200px; height: 50px; text-align:center; line-height: 50px; position: absolute; left: 880px;  margin-top: -200px; 
+section.swiper div.btn { display: flex;
+justify-content: center; margin-top: -200px;  }
+section.swiper div.btn > a.moreBtn { 
+  width: 200px; height: 50px; text-align:center; line-height: 50px;  
+  margin-left: 10px;
+background-color: orange; border-radius: 25px; opacity: .7}
+section.swiper div.btn > a.restBtn { 
+  width: 200px; height: 50px; text-align:center; line-height: 50px;
+  margin-left: 10px;   
   background-color: #f0eeee; border-radius: 25px; opacity: .7;
 }
 section.swiper div.btn a:hover {
@@ -245,7 +244,7 @@ section.swiper div.btn a:hover {
 /*----------------section05 편리함------------*/
 
 div.section05 {width: 100%; height: 880px; margin:0 auto; 
-  outline: 1px solid gray; }
+  border-bottom: 1px solid rgb(186, 184, 184); }
 div.section05 div.easy {width: 1400px; margin: 0 auto; padding-bottom: 100px;}
 div.section05 div.easy:after {
   content:""; display: block; clear:both;}
