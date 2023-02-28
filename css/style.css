@@ -134,7 +134,7 @@ header #header_wrap div.header div.right_menu ul li:nth-child(3) {
       }
 
 /* 이미지 슬라이드 */
-div.imgslide { width:1920px; min-width: 1280px; overflow: hidden; height:100%; margin-top: 150px; }  
+div.imgslide { width:1920px; min-width: 1280px; overflow: hidden; height:100%; margin: auto; margin-top: 150px;}
 div.imgslide div.slide { width: 15360px; } 
 div.imgslide div.slide ul li { width: 1920px; float:left;} 
 div.imgslide div.slide ul li img { width: 1920px;}
@@ -205,13 +205,21 @@ div.section02 div.btn:hover {
 }
 
 /*section03 퍼레이드*/
-div#wrap .section03 .bigbox1 h2 { font-size: 40px; font-weight: 300; color: #fff; background-color: #333; }
+div#wrap .section03 .bigbox1 h2 { font-size: 40px; font-weight: 300; color: #fff; background-color: #333; text-align: center; }
 
 div#wrap .section03 div.bigbox1 .swiper-button-prev {
-  color:white; 
+  color:rgb(209, 19, 199);  
+  background-color: #747070;
+  opacity: 0.7;
+  padding: 15px 15px;
+  border-radius: 20px;
 }
 div#wrap .section03 div.bigbox1 .swiper-button-next {
-  color:white; 
+  color:rgb(209, 19, 199);  
+  background-color: #747070;
+  opacity: 0.7;
+  padding: 15px 15px;
+  border-radius: 20px;
 }
 div.section03 div.btn { display: block; margin:0 auto; width: 200px; text-align:center; line-height: 50px; margin-top: -100px; background-color: orange; border-radius: 25px; margin-bottom: 70px; opacity: .8}
 div.section03 div.btn:hover {
